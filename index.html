@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automation Practice Test Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="page-header">
+    <div class="container header-inner">
+      <div class="branding">
+        <h1>Automation Practice Test Page</h1>
+        <p class="subtitle">A complete playground for Selenium and automation testing practice.</p>
+      </div>
+      <nav class="page-nav" aria-label="Section navigation">
+        <a href="#radio-button-section">Radio</a>
+        <a href="#suggestion-section">Suggest</a>
+        <a href="#dropdown-section">Dropdown</a>
+        <a href="#checkbox-section">Checkbox</a>
+        <a href="#alert-section">Alerts</a>
+        <a href="#web-table-section">Tables</a>
+        <a href="#mouse-hover-section">Hover</a>
+        <a href="#iframe-section">iFrame</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container cards-layout">
+    <!-- Radio Button Section -->
+    <section class="card" id="radio-button-section">
+      <h2>Radio Button Example</h2>
+      <div class="card-body">
+        <div class="form-row">
+          <label for="radio1">
+            <input type="radio" id="radio1" name="radioOption1" value="Option 1" />
+            Radio Button 1 &rarr; Option 1
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="radio2">
+            <input type="radio" id="radio2" name="radioOption2" value="Option 2" />
+            Radio Button 2 &rarr; Option 2
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="radio3">
+            <input type="radio" id="radio3" name="radioOption3" value="Option 3" />
+            Radio Button 3 &rarr; Option 3
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Auto Suggestion Section -->
+    <section class="card" id="suggestion-section">
+      <h2>Suggestion Class Example</h2>
+      <div class="card-body">
+        <div class="form-row autosuggest-wrapper">
+          <label for="country-input">Country</label>
+          <input
+            type="text"
+            id="country-input"
+            class="text-input"
+            placeholder="Type country name"
+            autocomplete="off"
+          />
+          <ul id="country-suggestions" class="suggestions-list" aria-label="Country suggestions"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dropdown Section -->
+    <section class="card" id="dropdown-section">
+      <h2>Dropdown Example</h2>
+      <div class="card-body">
+        <div class="form-row">
+          <label for="dropdown-class-example">Choose an option</label>
+          <select id="dropdown-class-example" class="select-input">
+            <option value="">-- Select --</option>
+            <option value="option1">Option1</option>
+            <option value="option2">Option2</option>
+            <option value="option3">Option3</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Checkbox Section -->
+    <section class="card" id="checkbox-section">
+      <h2>Checkbox Example</h2>
+      <div class="card-body">
+        <div class="form-row">
+          <label for="checkBoxOption1">
+            <input type="checkbox" id="checkBoxOption1" value="Option1" />
+            Checkbox1 Option1
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="checkBoxOption2">
+            <input type="checkbox" id="checkBoxOption2" value="Option2" />
+            Checkbox2 Option2
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="checkBoxOption3">
+            <input type="checkbox" id="checkBoxOption3" value="Option3" />
+            Checkbox3 Option3
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alert Section -->
+    <section class="card" id="alert-section">
+      <h2>Switch To Alert Example</h2>
+      <div class="card-body">
+        <div class="form-row">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" class="text-input" placeholder="Enter your name" />
+        </div>
+        <div class="button-row">
+          <button type="button" id="alertbtn" class="btn btn-primary">Show Alert</button>
+          <button type="button" id="confirmbtn" class="btn btn-secondary">Show Confirm</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Open Window Section -->
+    <section class="card" id="window-section">
+      <h2>Switch Window Example</h2>
+      <div class="card-body">
+        <button type="button" id="open-window-btn" class="btn btn-primary">
+          Open Window
+        </button>
+      </div>
+    </section>
+
+    <!-- Open Tab Section -->
+    <section class="card" id="tab-section">
+      <h2>Switch Tab Example</h2>
+      <div class="card-body">
+        <a
+          href="https://example.com"
+          id="open-tab-link"
+          class="btn btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Tab
+        </a>
+      </div>
+    </section>
+
+    <!-- Show/Hide Section -->
+    <section class="card" id="show-hide-section">
+      <h2>Element Display Example</h2>
+      <div class="card-body">
+        <div class="form-row">
+          <label for="displayed-text">Display Textbox</label>
+          <input type="text" id="displayed-text" class="text-input" placeholder="This can be shown or hidden" />
+        </div>
+        <div class="button-row">
+          <button type="button" id="hide-text-btn" class="btn btn-secondary">Hide</button>
+          <button type="button" id="show-text-btn" class="btn btn-primary">Show</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Web Table Section -->
+    <section class="card" id="web-table-section">
+      <h2>Web Table Example</h2>
+      <div class="card-body table-wrapper">
+        <table class="styled-table" id="course-table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Instructor</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Java Selenium</td>
+              <td>John Doe</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Python Automation</td>
+              <td>Jane Smith</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Web Testing</td>
+              <td>Alex Johnson</td>
+              <td>60</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Scroll Table Section -->
+    <section class="card" id="scroll-table-section">
+      <h2>Scroll Table Example</h2>
+      <div class="card-body">
+        <div class="scroll-container">
+          <table class="styled-table" id="scroll-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Item</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Row 1</td><td>Active</td></tr>
+              <tr><td>2</td><td>Row 2</td><td>Active</td></tr>
+              <tr><td>3</td><td>Row 3</td><td>Inactive</td></tr>
+              <tr><td>4</td><td>Row 4</td><td>Active</td></tr>
+              <tr><td>5</td><td>Row 5</td><td>Inactive</td></tr>
+              <tr><td>6</td><td>Row 6</td><td>Active</td></tr>
+              <tr><td>7</td><td>Row 7</td><td>Inactive</td></tr>
+              <tr><td>8</td><td>Row 8</td><td>Active</td></tr>
+              <tr><td>9</td><td>Row 9</td><td>Inactive</td></tr>
+              <tr><td>10</td><td>Row 10</td><td>Active</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mouse Hover Section -->
+    <section class="card" id="mouse-hover-section">
+      <h2>Mouse Hover Example</h2>
+      <div class="card-body">
+        <div class="hover-container">
+          <button type="button" id="hover-btn" class="btn btn-primary hover-trigger">
+            Hover Me
+          </button>
+          <ul class="hover-menu" id="hover-menu">
+            <li><button type="button" data-action="reload">Reload Page</button></li>
+            <li><button type="button" data-action="scroll-top">Scroll Top</button></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- iFrame Section -->
+    <section class="card" id="iframe-section">
+      <h2>iFrame Example</h2>
+      <div class="card-body">
+        <p class="card-description">
+          This embedded page is useful to practice switching into and out of iFrames during automation.
+        </p>
+        <div class="iframe-wrapper">
+          <iframe
+            id="example-iframe"
+            src="https://example.com"
+            width="100%"
+            height="300"
+            title="Example iFrame"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional Controls Section -->
+    <section class="card" id="additional-controls-section">
+      <h2>Additional Controls Example</h2>
+      <div class="card-body">
+        <p class="card-description">
+          Extra form controls for more Selenium and automation scenarios.
+        </p>
+        <div class="form-row">
+          <label for="volume-slider">Volume (Range Slider)</label>
+          <input type="range" id="volume-slider" min="0" max="100" value="40" />
+          <span class="hint-text">Current value: <span id="volume-value">40</span></span>
+        </div>
+        <div class="form-row">
+          <label for="date-picker">Select a Date</label>
+          <input type="date" id="date-picker" class="text-input" />
+        </div>
+        <div class="form-row">
+          <label for="file-upload">Upload a File</label>
+          <input type="file" id="file-upload" class="text-input" />
+          <span class="hint-text" id="file-upload-info">No file chosen.</span>
+        </div>
+        <div class="button-row">
+          <button type="button" id="controls-submit-btn" class="btn btn-primary">
+            Submit Controls
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Automation Practice Test Page. Designed for Selenium and automation testing.</p>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top-btn" class="back-to-top" aria-label="Back to top">
+    ↑
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
