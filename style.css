@@ -455,4 +455,8 @@ iframe {
     font-size: 0.8rem;
   }
 }
+.btn-danger {
+  background-color: #e74c3c;
+  color: white;
+}
 

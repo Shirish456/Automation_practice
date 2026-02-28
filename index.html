@@ -15,45 +15,38 @@
       <div class="branding">
         <h1>Automation Practice Test Page</h1>
         <p class="subtitle">A complete playground for Selenium and automation testing practice.</p>
-      </div>
-      <nav class="page-nav" aria-label="Section navigation">
-        <a href="#radio-button-section">Radio</a>
-        <a href="#suggestion-section">Suggest</a>
-        <a href="#dropdown-section">Dropdown</a>
-        <a href="#checkbox-section">Checkbox</a>
-        <a href="#alert-section">Alerts</a>
-        <a href="#web-table-section">Tables</a>
-        <a href="#mouse-hover-section">Hover</a>
-        <a href="#iframe-section">iFrame</a>
-      </nav>
     </div>
   </header>
 
   <main class="container cards-layout">
     <!-- Radio Button Section -->
     <section class="card" id="radio-button-section">
-      <h2>Radio Button Example</h2>
-      <div class="card-body">
-        <div class="form-row">
-          <label for="radio1">
-            <input type="radio" id="radio1" name="radioOption1" value="Option 1" />
-            Radio Button 1 &rarr; Option 1
-          </label>
-        </div>
-        <div class="form-row">
-          <label for="radio2">
-            <input type="radio" id="radio2" name="radioOption2" value="Option 2" />
-            Radio Button 2 &rarr; Option 2
-          </label>
-        </div>
-        <div class="form-row">
-          <label for="radio3">
-            <input type="radio" id="radio3" name="radioOption3" value="Option 3" />
-            Radio Button 3 &rarr; Option 3
-          </label>
-        </div>
-      </div>
-    </section>
+  <h2>Radio Button Example</h2>
+  <div class="card-body">
+    
+    <div class="form-row">
+      <label for="radio1">
+        <input type="radio" id="radio1" name="radioOption" value="Option 1" />
+        Radio Button 1 → Option 1
+      </label>
+    </div>
+
+    <div class="form-row">
+      <label for="radio2">
+        <input type="radio" id="radio2" name="radioOption" value="Option 2" />
+        Radio Button 2 → Option 2
+      </label>
+    </div>
+
+    <div class="form-row">
+      <label for="radio3">
+        <input type="radio" id="radio3" name="radioOption" value="Option 3" />
+        Radio Button 3 → Option 3
+      </label>
+    </div>
+
+  </div>
+</section>
 
     <!-- Auto Suggestion Section -->
     <section class="card" id="suggestion-section">
@@ -267,6 +260,33 @@
         </div>
       </div>
     </section>
+    <!-- Broken Link Section -->
+<section class="card" id="broken-link-section">
+  <h2>Broken Link Example</h2>
+  <div class="card-body">
+    <p class="card-description">
+      Practice verifying broken and working links.
+    </p>
+
+    <!-- Working Link 1 -->
+    <a href="https://example.com" target="_blank" class="btn btn-primary">
+      Working Link 1
+    </a>
+
+    <!-- Working Link 2 -->
+    <a href="https://www.google.com" target="_blank" class="btn btn-secondary">
+      Working Link 2
+    </a>
+
+    <!-- Real 404 Link -->
+    <a href="some-random-page.html" target="_blank">
+      Broken Link
+    </a>
+     
+    </a>
+    </a>
+  </div>
+</section>
 
     <!-- Additional Controls Section -->
     <section class="card" id="additional-controls-section">
